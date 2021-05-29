@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<head>
+
+  <script>
+    var introvid = document.getElementById("intro"); //declring variable of the intro vid
+    var audio = new Audio('domeafavor.wav');
+    document.getElementById('intro').play();
+    function introdone() {
+      audio.play();
+      document.getElementById("intro").classList.add("m-fadeOut");
+      document.getElementById("question").classList.add("m-fadeIn");
+      document.getElementById("answerbutton").classList.add("m-fadeInQButton");
+    };
+    function sheSaidYes() {
+      document.getElementById("question").innerHTML = "";
+      document.getElementById("answerbutton").style.visibility = "hidden";
+      document.getElementById("uwu").classList.add("m-fadeInUWU");
+      document.getElementById("saytheuwu").classList.add("m-fadeInUWU");
+      document.getElementById("MIO1").classList.add("m-fadeInOfficial1");
+      document.getElementById("MIO2").classList.add("m-fadeInOfficial2");
+      document.getElementById("MIO3").classList.add("m-fadeInOfficial3");
+    }
+    function finallyOfficial() {
+      document.getElementById("MIO3").classList.remove("m-fadeInOfficial3");
+      document.getElementById("MIO3").style.visibility = "hidden";
+      document.getElementById("uwu2").classList.add("m-fadeInUWU2");
+      document.getElementById("saytheuwu2").classList.add("m-fadeInUWU2");
+      document.getElementById("MIO1").classList.remove("m-fadeInOfficial1");
+      document.getElementById("MIO2").classList.remove("m-fadeInOfficial2");
+      document.getElementById("MIO1").style.visibility = "hidden";
+      document.getElementById("MIO2").style.visibility = "hidden";
+      document.getElementById("MIO4").classList.add("m-fadeInOfficial4");
+      document.getElementById("MIO5").classList.add("m-fadeInOfficial5");
+    }
+  </script>
+
+  <style>
+    .hiddentest {
+      opacity: 0;
+    }
+    .hiddenfirstquestion {
+    opacity: 0;
+    font-size: 10px;
+    }
+    .basehidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .hiddenuwu {
+      optacity: 0;
+      visibility: hidden;
+      top: 100%;
+    }
+    video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Helvetica";
+    }
+    h1 {
+      font-family: "Helvetica";
+      font-size: 400px;
+    }
+    button {
+      background-color: black;
+      color: white;
+      border-color: white;
+      border-width: 20px;
+      padding: 30px;
+    }
+    .m-fadeOut {
+      visibility: hidden !important;
+      opacity: 0;
+      transition: visibility 0s linear 2000ms, opacity 2000ms;
+    }
+    .m-fadeIn {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 2000s, opacity 2000ms, font-size 4000ms;
+      font-size: 400px;
+    }
+    .m-fadeInQButton {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 2000ms, opacity 6000ms; //change this back to 6000
+      transition-delay: 4s; // change this back to 4s
+    }
+    .m-fadeInUWU {
+      visibility: visible;
+      opacity: 1;
+      top: -100%;
+      transition: visibility 1000s, opacity 2000ms, top 5000ms cubic-bezier(0,.9,1,.06);
+    }
+    .m-fadeInOfficial1 {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 1000s, opacity 2000ms;
+      transition-delay: 4s;
+    }
+    .m-fadeInOfficial2 {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 1000s, opacity 2000ms;
+      transition-delay: 7.5s;
+    }
+    .m-fadeInOfficial3 {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 1000s, opacity 2000ms;
+      transition-delay: 9.0s;
+      animation-name: clickme;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .m-fadeInOfficial4 {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 1000s, opacity 2000ms;
+      transition-delay: 4s;
+    }
+    .m-fadeInOfficial5 {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 1000s, opacity 2000ms;
+      transition-delay: 7.5;
+    }
+    .centeredquestion {
+      position: fixed;
+      top: 10%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+    .centeredquestion2 {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+    .answerbutton {
+      position: fixed;
+      top: 75%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+    .uwu {
+      background-color: #ff66cc;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 100;
+    }
+    .makeitofficialheader {
+      font-size: 85px;
+    }
+    .makeitofficialheader2 {
+      font-size: 70px;
+    }
+    @keyframes clickme {
+      from {
+        width: 30%;
+      }
+      to {
+        width: 33%;
+      }
+    }
+    .m-fadeInUWU2 {
+      visibility: visible;
+      opacity: 1;
+      top: -100%;
+      transition: visibility 1000s, opacity 2000ms, top 5000ms cubic-bezier(0,.9,1,.06);
+    }
+
+  </style>
+
+</head>
+
+<body id="body">
+  <div class="uwu hiddenuwu" id="uwu">
+    <h1 id="saytheuwu" class="basehidden" style="text-align: center; vertical-align: middle; line-height: 100%;">uwu</h1>
+  </div>
+  <div class="uwu hiddenuwu" id="uwu2">
+    <h1 id="saytheuwu2" class="basehidden" style="text-align: center; vertical-align: middle; line-height: 100%;">yayyyyyy~</h1>
+  </div>
+  <video controls id="intro" onended="introdone()">
+    <source src="helohannahnopic.mp4" type="video/mp4">
+      Something's wrong. Sorry bb :<
+  </video>
+  <div id="thequestion">
+    <h1 id="question" class="centeredquestion hiddenfirstquestion"> ... ? </h1>
+    <button style="font-size: 250px;" class="answerbutton basehidden" id="answerbutton" onclick="sheSaidYes()">Yes! :></button>
+  </div>
+  <div>
+    <h1 id="MIO1" class="makeitofficialheader hiddentest" style="text-align: center;"> Black moved, now it's your turn again!</h1>
+    <h1 id="MIO2" class="makeitofficialheader2 hiddentest" style="text-align: center;"> Hannah, will you be this bishop's queen and take him as your official bb?</h1>
+    <img id="MIO3" class="basehidden" src="chessboardb4.png" style="margin-left: auto; margin-right: auto; display: block; width: 30%;" onclick="finallyOfficial()">
+  </div>
+  <div class="centeredquestion2" style="pointer-events: none;">
+    <h1 id="MIO4" class="makeitofficialheader basehidden" style="text-align: center; pointer-events: none;"> So glad I met u :> <br> Thank you for existing <3</h1>
+    <img id="MIO5" class="basehidden" src="chessboardafter.png" style="margin-left: auto; margin-right: auto; display: block; width: 50%;">
+  </div>
+</body>
